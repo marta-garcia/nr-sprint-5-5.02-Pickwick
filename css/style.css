@@ -1,0 +1,643 @@
+@import url(//db.onlinewebfonts.com/c/a78cfad3beb089a6ce86d4e280fa270b?family=Calibri);
+
+@font-face {
+  font-family: "Calibri";
+  src: url("//db.onlinewebfonts.com/t/a78cfad3beb089a6ce86d4e280fa270b.eot");
+  src: url("//db.onlinewebfonts.com/t/a78cfad3beb089a6ce86d4e280fa270b.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/a78cfad3beb089a6ce86d4e280fa270b.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/a78cfad3beb089a6ce86d4e280fa270b.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/a78cfad3beb089a6ce86d4e280fa270b.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/a78cfad3beb089a6ce86d4e280fa270b.svg#Calibri")
+      format("svg");
+}
+
+:root {
+  font-family: "Quicksand", sans-serif;
+
+  /* Variables */
+  --main-bg-color: #fff;
+  --secondary-bg-color: #eceade;
+  --main-color: #fff;
+  --secondary-color: #000;
+  --pickwick-color: #4b9618;
+  /* --max-width: 1400px; */
+}
+
+*html {
+  box-sizing: border-box;
+  line-height: 1.5rem;
+  background: #fff;
+  color: #000;
+  /* width: var(--max-width); */
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+}
+/* Utility style */
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Merienda", sans-serif;
+}
+h1 {
+  font-size: 2.4rem;
+  font-weight: 100;
+  color: var(--pickwick-color);
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+  line-height: 3rem;
+}
+
+h2 {
+  font-weight: 100;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+}
+
+h2:hover {
+  color: var(--pickwick-color);
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+
+/* h4 {
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 2rem 1.8rem 1.8rem 6rem;
+} */
+
+p {
+  font-size: 0.9rem;
+  padding: 1.5rem 1rem 2rem 1rem;
+  padding-bottom: 3rem;
+}
+
+a,
+li {
+  cursor: pointer;
+}
+
+.button-pickwick {
+  color: #fff;
+  text-decoration: none;
+  background-color: var(--pickwick-color);
+  font-size: 1rem;
+  font-weight: 900;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 30px;
+}
+
+.button-pickwick:hover {
+  color: var(--pickwick-color);
+  background-color: #fff;
+  border: 2px solid var(--pickwick-color);
+}
+
+/* Header and navigation style */
+.header {
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  border-bottom: 0.25rem outset #f5f1f1;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  place-items: center center;
+  justify-content: space-around;
+  padding: 0 4rem;
+  font-size: 1rem;
+}
+
+.navbar span:hover {
+  color: var(--pickwick-color);
+  font-weight: bold;
+}
+
+.header .menu-icon {
+  display: none;
+}
+
+.header .logo-icon-2 {
+  display: none;
+}
+
+.header .menu-icon span {
+  display: block;
+  font-size: 0.7rem;
+  color: black;
+}
+
+.navbar .sub-navigation {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar span {
+  color: #fff;
+}
+
+.navbar img {
+  width: 100%;
+}
+
+.navbar .menu {
+  display: none;
+  position: static;
+  z-index: auto;
+}
+/* Main style: Six sections */
+
+/* Main-content: Hero image including text (image) and text */
+
+.main-content .hero {
+  background: url("../images/pickwickgoedemorgen2.jpg") center center / cover;
+  clip-path: ellipse(100% 70% at 50% 30%);
+  min-height: 70vh;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.main-content .hero img {
+  /* align-self: s; */
+  /* position: absolute; */
+  width: 55%;
+  /* padding-top: 20%; */
+  padding-left: 1rem;
+}
+
+.main-content .hero p {
+  font-size: 1.6rem;
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(17, 17, 17, 0.4);
+  padding-left: 4rem;
+  max-width: 40%;
+}
+
+/* Main-content: Information about new-products */
+
+.main-content .new-products {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  justify-items: center;
+  align-items: center;
+  padding: 5% 5% 5% 5%;
+}
+
+.new-products .new-products-description {
+  justify-self: end;
+  align-self: center;
+  padding: 0 2 0 4rem;
+}
+
+.new-products img {
+  justify-self: start;
+  align-self: center;
+  box-shadow: 0.1rem 0.1rem 0.9rem #ccc;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* mask at the top of the section tea-variations */
+
+.main-content .tea-variations::before {
+  content: "";
+  position: absolute;
+  background: white;
+  width: 100%;
+  height: 15rem;
+  background: #fff;
+  border-radius: 80% / 80%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  transform: rotate(180deg);
+}
+/* Information about different tea types: tea-variations */
+
+.main-content .tea-variations-heading {
+  z-index: 1;
+}
+
+.main-content .tea-variations {
+  background: var(--secondary-bg-color);
+  display: grid;
+  gap: 2.5rem;
+  text-align: center;
+  justify-items: center;
+}
+
+.flavours-tea {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1.5fr 1fr;
+  /* grid-template-columns: repeat(4, 1fr); */
+  align-items: end;
+  z-index: 1;
+}
+
+.flavour img {
+  width: 50%;
+}
+
+/* mask at the bottom of the section tea-variations */
+
+.main-content .tea-variations::after {
+  content: "";
+  width: 100%;
+  height: 5rem;
+  background: #fff;
+  border-radius: 80% / 100%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* Section: tea-topics including a video, text and link */
+
+.main-content .tea-topics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.tea-topics video {
+  max-width: 100%;
+  justify-self: center;
+  align-self: center;
+  border-radius: 15px;
+  box-shadow: 0.4rem 0.6rem 0.9rem rgb(145, 143, 143);
+  margin-left: 5rem;
+}
+
+.tea-topics .tea-topics-description {
+  padding: 2rem 2rem 3rem 5rem;
+}
+
+/* New section containing: Inspiration */
+
+.main-content .inspiration {
+  display: flex;
+  flex-direction: column;
+  flex-grow: auto;
+}
+
+.inspiration h1 {
+  text-align: center;
+}
+
+.wrapper-inspiration {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 2rem 2.5rem;
+}
+.information {
+  box-shadow: 0.1rem 0.1rem 0.8rem #ccc;
+  display: grid;
+  padding: 0.8rem 1rem;
+}
+
+.information img {
+  max-width: 100%;
+}
+
+.information a {
+  text-decoration: none;
+  color: var(--pickwick-color);
+  font-weight: 900;
+  align-self: end;
+  padding-bottom: 1rem;
+  padding-left: 1.3rem;
+}
+
+.information .fa-chevron-right {
+  color: red;
+  font-size: 0.9rem;
+  padding-right: 2.5rem;
+}
+
+/* Section including a contact form */
+.contact {
+  background: url("../images/pickwickgoedemiddag.jpg") center center / cover;
+  min-height: 900px;
+}
+
+.contact-description {
+  padding-top: 5%;
+  padding-left: 5%;
+}
+
+.contact-form {
+  padding-right: 0rem;
+  font-size: 1.1rem;
+  max-width: 700px;
+  max-height: 1000px;
+  padding-left: 2%;
+}
+
+.contact-description p {
+  padding-right: 20%;
+}
+
+/* Style for the checkboxes */
+
+.contact-form .container {
+  display: inline-block;
+  position: relative;
+  padding-left: 2.7rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.9rem;
+  width: 2rem;
+  opacity: 2rem;
+  border-radius: 50%;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #fff;
+  opacity: 0.9;
+}
+
+/* Create the checkmark (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark */
+.container .checkmark:after {
+  left: 0.7rem;
+  top: 0.3rem;
+  width: 0.4rem;
+  height: 0.7rem;
+  border: solid var(--pickwick-color);
+  border-width: 0 0.2rem 0.2rem 0;
+  transform: rotate(45deg);
+}
+
+/* Name and email contact */
+.contact-name {
+  padding-bottom: 2rem;
+  width: 100%;
+}
+
+label {
+  display: inline-block;
+  padding-bottom: 0.5rem;
+  padding-top: 0.4rem;
+}
+
+input[type="text"],
+input[type="Email"] {
+  position: relative;
+  opacity: 0.6;
+  border: none;
+  border-radius: 30px;
+  margin-right: 0.5rem;
+  padding: 0.8rem 6rem 2rem 7rem;
+}
+
+input[type="Email"] {
+  padding-right: 20rem;
+}
+/* checkbox confirmation form */
+
+.contact-form .shadow {
+  padding-bottom: 3rem;
+  position: relative;
+}
+.shadow .checkbox {
+  display: inline;
+  cursor: pointer;
+  position: relative;
+}
+
+.shadow .container {
+  display: inline-block;
+  position: relative;
+  padding-left: 2.7rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+
+.shadow .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.square-checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.9rem;
+  width: 2rem;
+  opacity: 2rem;
+  border-radius: 10%;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .square-checkmark {
+  opacity: 0.9;
+}
+
+/* Create the checkmark (hidden when not checked) */
+.square-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .square-checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark */
+.container .square-checkmark:after {
+  left: 0.9rem;
+  top: 0.5rem;
+  width: 0.3rem;
+  height: 0.7rem;
+  border: solid var(--pickwick-color);
+  border-width: 0 0.2rem 0.2rem 0;
+  transform: rotate(45deg);
+}
+
+/* Text form style  */
+
+.shadow {
+  padding-top: 0.5rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.shadow .text {
+  position: absolute;
+  background: rgba(245, 242, 242, 0.6);
+  border-radius: 25px;
+  padding: 1rem 1rem;
+  font-size: 0.8rem;
+}
+
+.shadow .button-pickwick {
+  position: absolute;
+  margin-top: 14rem;
+}
+
+/* Footer: includes social-media, menu-footer with links and some links (footer-links) */
+
+.footer {
+  display: grid;
+  grid-template-rows: 0.5fr 1fr;
+  justify-items: end;
+}
+
+.footer .social-media p {
+  font-family: "Merienda", sans-serif;
+  font-size: 1.3rem;
+  padding-left: 4rem;
+}
+
+.footer .social-media a {
+  padding-right: 1.5rem;
+}
+
+/* Footer: menu with links and website logo*/
+
+.footer .main-footer {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 5fr 1fr 1fr;
+  justify-items: start;
+  align-items: start;
+  justify-content: start;
+  /* font-weight: 100; */
+  /* padding-bottom: 2rem; */
+}
+
+.footer .main-footer .menu-footer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: start;
+  align-items: start;
+}
+
+.footer .main-footer .menu-footer ul {
+  justify-self: start;
+  align-self: start;
+  width: auto;
+  padding: 2rem 1rem 1rem 1rem;
+  font-size: 0.9rem;
+  list-style: none;
+  line-height: 2rem;
+}
+
+.footer .main-footer .menu-footer li:hover {
+  color: var(--pickwick-color);
+}
+
+.footer .main-footer .menu-footer .title {
+  font-family: "Merienda", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  padding-bottom: 2rem;
+}
+
+.footer .main-footer .menu-footer .title:hover {
+  color: #000;
+}
+
+.footer .main-footer .icon-footer {
+  padding-top: 2rem;
+  /* padding-left: 10rem; */
+}
+
+/* Footer links to company information */
+
+.footer .footer-links {
+  align-self: center;
+  justify-self: center;
+}
+
+.footer .footer-links p {
+  display: inline-block;
+}
+
+.footer .footer-links a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 100;
+  color: var(--secondary-color);
+  padding-left: 3rem;
+}
+
+.footer .footer-links a:hover {
+  color: var(--pickwick-color);
+}
+
+.footer .icon-footer-2 {
+  display: none;
+}
