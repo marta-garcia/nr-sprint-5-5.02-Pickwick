@@ -24,7 +24,6 @@
   --main-color: #fff;
   --secondary-color: #000;
   --pickwick-color: #4b9618;
-  /* --max-width: 1400px; */
 }
 
 *html {
@@ -32,7 +31,6 @@
   line-height: 1.5rem;
   background: #fff;
   color: #000;
-  /* width: var(--max-width); */
 }
 
 *,
@@ -79,12 +77,6 @@ h3 {
   padding: 1rem;
 }
 
-/* h4 {
-  font-weight: bold;
-  font-size: 1.1rem;
-  padding: 2rem 1.8rem 1.8rem 6rem;
-} */
-
 p {
   font-size: 0.9rem;
   padding: 1.5rem 1rem 2rem 1rem;
@@ -114,6 +106,7 @@ li {
 }
 
 /* Header and navigation style */
+
 .header {
   background: #fff;
   position: sticky;
@@ -188,10 +181,7 @@ li {
 }
 
 .main-content .hero img {
-  /* align-self: s; */
-  /* position: absolute; */
   width: 55%;
-  /* padding-top: 20%; */
   padding-left: 1rem;
 }
 
@@ -429,6 +419,7 @@ li {
 }
 
 /* Name and email contact */
+
 .contact-name {
   padding-bottom: 2rem;
   width: 100%;
@@ -574,8 +565,6 @@ input[type="Email"] {
   justify-items: start;
   align-items: start;
   justify-content: start;
-  /* font-weight: 100; */
-  /* padding-bottom: 2rem; */
 }
 
 .footer .main-footer .menu-footer {
@@ -612,7 +601,6 @@ input[type="Email"] {
 
 .footer .main-footer .icon-footer {
   padding-top: 2rem;
-  /* padding-left: 10rem; */
 }
 
 /* Footer links to company information */
