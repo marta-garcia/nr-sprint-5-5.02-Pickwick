@@ -97,10 +97,10 @@ input[type="text"] {
 }
 
 .footer .footer-links {
-  display: flex;
-  flex-direction: column;
   align-self: start;
   justify-self: start;
+  display: flex;
+  flex-direction: column;
   padding-top: 1rem;
   line-height: 1.7rem;
 }
@@ -137,6 +137,7 @@ input[type="text"] {
   .main-content .tea-variations::before {
     height: 6rem;
   }
+
   /* Contact section */
 
   .contact {
@@ -210,6 +211,7 @@ input[type="text"] {
     text-align: center;
   }
 }
+
 @media (max-width: 450px) {
   .header {
     width: 100%;
